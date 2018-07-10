@@ -1,0 +1,166 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    font-family: 'Coda Caption', sans-serif;
+}
+
+.contenedor {
+    width: 80%;
+    max-width: 1000%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+header {
+    margin-top: 10px;
+    width: 100%;
+    height: 150px;
+    overflow: hidden;
+    position: relative; 
+}
+nav {
+    top: -20px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 20px auto;
+    max-width: 1000%;
+    width: 90%;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav > ul {
+    display: table;
+    width: 100%;
+    background: #000;
+    position: relative;
+}
+
+nav > ul li {
+    display: table-cell;
+
+}
+
+/*Submenú*/
+nav > ul > li:hover > ul {
+    display: block;
+    height: 100%;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
+nav > ul > li > ul {
+    display: block;
+    position: absolute;
+    background: #000;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    height: 0%;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
+nav > ul li a {
+    color: #ffffff;
+    display: block;
+    line-height: 20px;
+    padding: 20px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+
+    /* Se uso css3 Generator*/
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
+nav > ul > li > ul > li a:hover {
+    background: #5da5a2
+}
+
+nav > ul > li > a span {
+    background: #174459;
+    display: block;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    position: absolute;
+    top: -55px;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
+nav > ul > li > a span .icon {
+    display: block;
+    line-height: 60px;
+}
+
+nav > ul > li > a:hover > span {
+    top: 0;
+}
+
+/*Colores de */
+nav ul li a .uno {
+    background: #71b3c3;
+}
+
+nav ul li a .dos {
+    background: #d2db7c;
+}
+
+nav ul li a .tres {
+    background: #50b970
+}
+
+nav ul li a .cuatro {
+    background: #7b8ace
+}
+
+footer {
+    font-size: 1.25em;
+    text-align: center;
+    clear: both;
+    padding-top: 50px;
+    color: rgb(14, 3, 1);
+}
+
+#wrapper {
+    max-width: 95%;
+    margin: 0 auto;
+    padding: 0 5%;
+}
+
+
+img {
+    max-width: 100%
+}
+
+body {
+    background-color: rgb(113, 218, 212);
+    color: #999;
+}
+
+@media screen and (max-width: 800px) {
+    body {
+        background: #ffffff
+    }
+}
